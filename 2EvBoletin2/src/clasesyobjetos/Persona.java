@@ -19,6 +19,7 @@ public class Persona {
 		p1.fechaNac=sc.nextLine();
 		p1.estatura=sc.nextLine();
 		
+		int a=0;//hola ukui
 		java.util.Date fechaActual = new java.util.Date();
 		System.out.println(fechaActual);
 	}
