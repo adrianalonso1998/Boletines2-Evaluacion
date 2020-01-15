@@ -1,32 +1,34 @@
 package clasesyobjetos;
-import java.util.Scanner;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
 public class Persona {
-	//campos
-	Scanner sc = new Scanner(System.in);
-	
+	// campos
 	public String nombre;
 	public String apellidos;
-	public String fechaNac;
+	public LocalDate fechaNac;
 	public int estatura;
 
-	
+	// metodos
 
-	public static void main(String[] args) {
-		// metodos
-		Scanner sc = new Scanner(System.in);
-		Persona p1= new Persona();
-		p1.nombre=sc.nextLine();
-		p1.apellidos=sc.nextLine();
-		p1.fechaNac=sc.nextLine();
-		p1.estatura=sc.nextLine();
-		
-		
-		java.util.Date fechaActual = new java.util.Date();
-		System.out.println(fechaActual);
+	public void mostrarDatos() {
+
+		System.out.println(nombre);
+		System.out.println(apellidos);
+		System.out.println(estatura);
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+		System.out.println(dtf.format(fechaNac));
 	}
 
+	public void obtenerEdad() {
 
-//constructore
+		long edad = ChronoUnit.YEARS.between(fechaNac, LocalDate.now());
+		System.out.println(edad + "\n");
+	}
 	
-
+//	public Persona
+	
+	
 }
