@@ -47,6 +47,43 @@ public class Ejercicio1 {
 		p4.mostrarDatos();
 		p4.obtenerEdad();
 		
+		//nuevo constructor
+		Persona p5 = new Persona("Luis", "Rodriguez", LocalDate.of(1998, 04, 15));
+		
+		
+		
+		//for each guarda los tipo persona en un array y los recorre para visualizar
+		Persona[]arrayP= {p1,p2,p3,p4,p5};	
+		for(Persona p: arrayP)
+		{
+			p.obtenerEdad();
+			p.mostrarDatos();
+		}
+		//recorrer otra forma array
+		System.out.println("siguiente forma\n\n\n\n");
+		Persona[] array=new Persona[5];
+		array[0]=p1;
+		array[1]=p2;
+		array[2]=p3;
+		array[3]=p4;
+		array[4]=p5;
+		Persona personaedadMax();
+		for(int i=0;i<array.length;i++)
+		{
+			Persona p=array[i];	
+			p.obtenerEdad();
+			p.mostrarDatos();
+			if(p.obtenerEdad()>personaEdadMax)
+			{
+			personaEdadMax=p.obtenerEdad();
+			}
+			System.out.println(personaEdadMax);
+		}
+		
+		
+		
+		
+		//fecha actual
 		java.util.Date fechaActual = new java.util.Date();
 		System.out.println(fechaActual);
 	}

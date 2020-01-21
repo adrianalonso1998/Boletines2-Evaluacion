@@ -22,13 +22,24 @@ public class Persona {
 		System.out.println(dtf.format(fechaNac));
 	}
 
-	public void obtenerEdad() {
+	public long obtenerEdad() {
 
 		long edad = ChronoUnit.YEARS.between(fechaNac, LocalDate.now());
-		System.out.println(edad + "\n");
+		//System.out.println(edad + "\n");
+		return edad;
 	}
 	
-//	public Persona
+	public Persona(String nombre, String apellidos, LocalDate fechaNac)
+	{
+		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.fechaNac=fechaNac;
+		mostrarDatos();
+	}
+	
+	public Persona()
+	{
+	}
 	
 	
-}
+}//	public Persona
