@@ -34,7 +34,7 @@ public class Persona {
 		this.nombre=nombre;
 		this.apellidos=apellidos;
 		this.fechaNac=fechaNac;
-		mostrarDatos();
+		//mostrarDatos();
 	}
 	
 	public Persona()
