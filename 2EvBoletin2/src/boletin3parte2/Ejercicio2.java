@@ -16,13 +16,9 @@ public class Ejercicio2 {
 		c1.calcularArea();
 		System.out.println("Area Circulo: " + c1.getArea());
 		r1.calcularArea();
-		System.out.println("Area Triangulo: " + r1.getArea());
-		
-		//terminar impresion cuadrado como los de arriba
-		r1.calcularArea();
-		System.out.println("Area Triangulo: " + r1.getArea());
-		
-		
+		System.out.println("Area Rectangulo: " + r1.getArea());		
+		cu1.calcularArea();
+		System.out.println("Area Cuadrado: " + cu1.getArea());
 	}
 
 }
