@@ -13,5 +13,9 @@ public class Cuadrado extends Rectangulo {
 	public double getLado() {
 		return this.getBase();
 	}
-	
+	@Override
+	public String toString() 
+	{
+		return String.format("lado %s \n Area %s ",getLado(), getArea());
+	}
 }

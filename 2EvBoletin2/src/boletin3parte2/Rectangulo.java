@@ -27,4 +27,9 @@ public class Rectangulo extends Figura{
 	public void calcularArea() {
 		this.setArea(base*altura);
 	}
+	@Override
+	public String toString() 
+	{
+		return String.format("Base %s \n Altura %s \n Area %s ", base,altura, getArea());
+	}
 }

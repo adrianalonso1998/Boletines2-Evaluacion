@@ -18,4 +18,9 @@ public class Circulo extends Figura {
 	public void calcularArea() {
 		this.setArea(2*CONSTANTE_PI*radio);
 	}
+	@Override
+	public String toString() 
+	{
+		return String.format(" Radio %s \n Area %s ", radio, getArea());
+	}
 }

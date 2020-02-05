@@ -26,5 +26,10 @@ public class Triangulo extends Figura {
 	public void calcularArea() {
 		this.setArea((base*altura)/2);
 	}
-	
-}
+
+	@Override
+	public String toString() 
+	{
+		return String.format("Base %s \n Altura %s \n Area %s ", base,altura, getArea());
+	}
+	}
