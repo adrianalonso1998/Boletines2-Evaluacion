@@ -1,12 +1,23 @@
 package boletin3parte2;
 
-public abstract class Figura {
+public abstract class Figura implements ICalculosFigura, IImpresionFigura {
 
 	private double area;
+	private double perimetro;
 	
-	protected abstract void calcularArea();
+	public abstract void calcularArea();
+	public abstract void calcularPerimetro();
 
-	protected void imprimirArea() {
+	@Override
+	public void imprimirFiguras() {
+		System.out.println(Figura);//hacer impresion figuras
+	}
+	@Override
+	public void imprimirPerimetro() {
+		System.out.println(perimetro);
+	}
+	@Override
+	public void imprimirArea() {
 		System.out.println(area);
 	}
 	public void setArea (double area) {
@@ -15,5 +26,12 @@ public abstract class Figura {
 	
 	public double getArea() {
 		return this.area;
+	}
+	public void setPerimetro (double perimetro) {
+		this.perimetro=perimetro;
+	}
+	
+	public double getPerimetro() {
+		return this.perimetro;
 	}
 }

@@ -23,6 +23,7 @@ public class Ejercicio2 {
 		System.out.println("Area Cuadrado: " + cu1.getArea());
 		array(arrayFiguras);
 
+		
 	}
 
 	public static void array(Figura[] arrayFiguras) {
@@ -31,66 +32,66 @@ public class Ejercicio2 {
 		Circulo[] arrayCirculo = new Circulo[arrayFiguras.length];
 		Rectangulo[] arrayRectangulo = new Rectangulo[arrayFiguras.length];
 		int j = 0;
-		
+
 		for (int i = 0; i < arrayFiguras.length; i++) {
 			arrayFiguras[i].calcularArea();
-			//triangulo
+			// triangulo
 			if (arrayFiguras[i] instanceof Triangulo) {
 				arrayTriangulo[j] = (Triangulo) arrayFiguras[i];
 				j++;
 			}
-			//cuadrado
+			// cuadrado
 			if (arrayFiguras[i] instanceof Cuadrado) {
 				arrayCuadrados[j] = (Cuadrado) arrayFiguras[i];
 				j++;
 			}
-			//rectangulo
+			// rectangulo
 			else if (arrayFiguras[i] instanceof Rectangulo) {
 
 				arrayRectangulo[j] = (Rectangulo) arrayFiguras[i];
 				j++;
 			}
-			//circulo
+			// circulo
 			if (arrayFiguras[i] instanceof Circulo) {
 
 				arrayCirculo[j] = (Circulo) arrayFiguras[i];
 				j++;
 			}
-			
+
 		}
-		//triangulo
-		System.out.println("array triangulos: ");
+		// triangulo
+		System.out.println("array triangulos:\n ");
 		for (Triangulo tri1 : arrayTriangulo) {
 			if (tri1 == null) {
 			} else {
-				System.out.println(tri1+"\n");
+				System.out.println(tri1 + "\n");
 			}
 		}
-		//cuadrado
-		System.out.println("array cuadrados: ");
+		// cuadrado
+		System.out.println("array cuadrados:\n ");
 		for (Cuadrado cuad1 : arrayCuadrados) {
 			if (cuad1 == null) {
 			} else {
-				System.out.println(cuad1+"\n");
+				System.out.println(cuad1 + "\n");
 			}
 		}
-		//rectangulo
-		System.out.println("array rectangulo: ");
+		// rectangulo
+		System.out.println("array rectangulo:\n ");
 		for (Rectangulo rec1 : arrayRectangulo) {
 			if (rec1 == null) {
 			} else {
-				System.out.println(rec1+"\n");
+				System.out.println(rec1 + "\n");
 			}
 		}
-		//circulo
-		System.out.println("array circulo: ");
+		// circulo
+		System.out.println("array circulo:\n ");
 		for (Circulo cir1 : arrayCirculo) {
 			if (cir1 == null) {
 			} else {
-				System.out.println(cir1+"\n");
+				System.out.println(cir1 + "\n");
 			}
 		}
-		
+
 	}
 
 }
