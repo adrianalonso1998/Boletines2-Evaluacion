@@ -37,7 +37,14 @@ public class Rectangulo extends Figura {
 
 	@Override
 	public void calcularPerimetro() {
-		super.setPerimetro(base+base+altura+altura);
-		
+		super.setPerimetro(base + base + altura + altura);
+
+	}
+
+	public void imprimirFiguras() {
+		System.out.println("Base " + base);
+		System.out.println("Altura " + altura);
+		System.out.println("Area " + getArea());
+		System.out.println("Altura " + getPerimetro());
 	}
 }

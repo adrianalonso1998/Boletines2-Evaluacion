@@ -28,7 +28,13 @@ public class Circulo extends Figura {
 
 	@Override
 	public void calcularPerimetro() {
-		super.setPerimetro(2*CONSTANTE_PI*radio);
-		
+		super.setPerimetro(2 * CONSTANTE_PI * radio);
+
+	}
+
+	public void imprimirFiguras() {
+		System.out.println("Radio " + radio);
+		System.out.println("Area " + getArea());
+		System.out.println("Altura " + getPerimetro());
 	}
 }

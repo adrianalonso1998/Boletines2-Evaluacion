@@ -19,4 +19,9 @@ public class Cuadrado extends Rectangulo {
 	public String toString() {
 		return String.format("\tlado %s \n\tArea %s ", getLado(), getArea());
 	}
+	public void imprimirFiguras() {
+		System.out.println("Base " + getBase());
+		System.out.println("Area " + getArea());
+		System.out.println("Altura " + getPerimetro());
+	}
 }

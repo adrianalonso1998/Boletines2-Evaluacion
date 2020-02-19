@@ -94,4 +94,9 @@ public class Ejercicio2 {
 
 	}
 
+	//falta hacer las llamadasa a imprimir perimetro area y figura
+	
+	
+	
+	
 }

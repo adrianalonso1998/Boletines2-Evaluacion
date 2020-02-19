@@ -4,7 +4,6 @@ public class Triangulo extends Figura {
 
 	private double base;
 	private double altura;
-	
 
 	public Triangulo(double base, double altura) {
 		this.base = base;
@@ -38,7 +37,14 @@ public class Triangulo extends Figura {
 
 	@Override
 	public void calcularPerimetro() {
-		super.setPerimetro(3*base);
-		
+		super.setPerimetro(3 * base);
+
+	}
+
+	public void imprimirFiguras() {
+		System.out.println("Base " + base);
+		System.out.println("Altura " + altura);
+		System.out.println("Area " + getArea());
+		System.out.println("Altura " + getPerimetro());
 	}
 }
