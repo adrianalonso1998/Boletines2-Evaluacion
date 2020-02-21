@@ -26,7 +26,7 @@ public class Rectangulo extends Figura {
 		return this.altura;
 	}
 
-	public void calcularArea() {
+	public final void calcularArea() {
 		this.setArea(base * altura);
 	}
 

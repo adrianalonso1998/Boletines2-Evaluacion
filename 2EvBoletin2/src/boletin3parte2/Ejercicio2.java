@@ -12,8 +12,11 @@ public class Ejercicio2 {
 		Circulo c1 = new Circulo(5);
 		Rectangulo r1 = new Rectangulo(150, 563);
 		Cuadrado cu1 = new Cuadrado(55);
-
+		t1.calcularPerimetro();
 		t1.calcularArea();
+		t1.imprimirFiguras();
+		
+		
 		System.out.println("Area Triangulo: " + t1.getArea());
 		c1.calcularArea();
 		System.out.println("Area Circulo: " + c1.getArea());
@@ -95,6 +98,7 @@ public class Ejercicio2 {
 	}
 
 	//falta hacer las llamadasa a imprimir perimetro area y figura
+	
 	
 	
 	
