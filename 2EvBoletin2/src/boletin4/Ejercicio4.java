@@ -8,7 +8,6 @@ public class Ejercicio4 {
 		System.out.println("Intruduce numero a comprobar");
 		String numero = sc.nextLine(); 
 		UtilTransformacionDatos.esValorNumerico(numero);
-
 	}
 
 }
