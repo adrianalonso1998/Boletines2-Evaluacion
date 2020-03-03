@@ -1,22 +1,27 @@
 package boletin4;
 
+import java.util.Timer;
+
 public class UtilTransformacionDatos {
-	
-	public static double obtenerValorDouble(String numero) {
-		
-	}
-	
-	public static boolean esValorNumerico(String numero) {
-		
-	try {	
+
+	public static double obtenerValorDouble(String numero) throws NumberFormatException {
+
 		double d = Double.valueOf(numero);
-		return true;
+		return d;
+
 	}
-	catch(NumberFormatException e){
-		e.printStackTrace(); //para imprimir igualmente el mensaje de error, pero sin petar
-		return false;
+
+	public static boolean esValorNumerico(String numero) {
+
+		try {
+			double d = Double.valueOf(numero);
+			return true;
+		} catch (NumberFormatException e) {
+			//e.printStackTrace(); // para imprimir igualmente el mensaje de error, pero sin petar
+			
+			return false;
+		}
+
 	}
-		
-	}
-	
+
 }
