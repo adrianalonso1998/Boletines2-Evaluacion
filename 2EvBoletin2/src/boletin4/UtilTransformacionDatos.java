@@ -4,12 +4,7 @@ import java.util.Timer;
 
 public class UtilTransformacionDatos {
 
-	public static double obtenerValorDouble(String numero) throws NumberFormatException {
-
-		double d = Double.valueOf(numero);
-		return d;
-
-	}
+	
 
 	public static boolean esValorNumerico(String numero) {
 
@@ -17,8 +12,8 @@ public class UtilTransformacionDatos {
 			double d = Double.valueOf(numero);
 			return true;
 		} catch (NumberFormatException e) {
-			//e.printStackTrace(); // para imprimir igualmente el mensaje de error, pero sin petar
-			
+			// e.printStackTrace(); // para imprimir igualmente el mensaje de error, pero
+			// sin petar
 			return false;
 		}
 
