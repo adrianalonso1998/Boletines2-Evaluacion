@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio4 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws LoginUsuarioNoExistente {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Intruduce numero a comprobar2");
 		String numero = sc.nextLine();
@@ -13,8 +13,8 @@ public class Ejercicio4 {
 		else
 			System.out.println("No es numérico");
 		boolean valorCorrecto=false;
-		 UtilLogeo a=new UtilLogeo();
-		 a.realizarLogin("adolfo", "qwerty");
+		
+		 
 		
 		
 		while(valorCorrecto==false) {
@@ -37,6 +37,13 @@ public class Ejercicio4 {
 		}
 		}
 	
+		System.out.println("introduce el nombre de usuario");
+		String usuario=sc.nextLine();
+		System.out.println("introduce la contraseña");
+		String contraseña=sc.nextLine();
+		UtilLogeo.realizarLogin(usuario,contraseña);
+	
+		System.out.println("dhffkgh");
 	}
 
 }
